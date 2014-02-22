@@ -1,0 +1,14 @@
+<template name="postItem">
+  <div class="span2">
+  <div class="post">
+    <div class="post-content">
+
+      <img class="thumbnail" src="{{cfsFileUrl "fileHandler" fileId=fileID collection="Images"}}" alt="{{_id}}">
+      <h3>{{title}}</h3>
+
+      <span>by {{author}}</span>
+      <a href="{{pathFor 'postPage'}}" class="discuss btn">View</a>
+    </div>
+  </div>
+</div>
+</template>

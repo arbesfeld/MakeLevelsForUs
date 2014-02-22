@@ -1,0 +1,15 @@
+<template name="postPage">
+  <div class="post">
+    <div class="post-content">
+
+      <img class="largeImage" src="{{cfsFileUrl "fileHandler" fileId=fileID collection="Images"}}" alt="{{_id}}">
+      <h1>{{title}}</h1>
+      <h3>by {{author}}</h3>
+
+      <h5><u> Hints </u></h5>
+      <h5>1. {{hint 0}}</h5>
+      <h5>2. {{hint 1}}</h5>
+      <h5>3. {{hint 2}}</h5>
+    </div>
+  </div>
+</template>

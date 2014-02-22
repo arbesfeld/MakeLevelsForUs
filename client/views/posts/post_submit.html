@@ -1,0 +1,33 @@
+<template name="postSubmit">
+  <form class="main">
+
+    <div class="control-group">
+        <label class="control-label" for="title">Level Name</label>
+        <div class="controls">
+            <input name="title" type="text" value="" placeholder="Name your level"/>
+        </div>
+        <label class="control-label" for="title">Hints for beating the level</label>
+        <div class="controls">
+            <input name="hint1" type="text" value="" placeholder="Hint"/><br>
+            <input name="hint2" type="text" value="" placeholder="Hint"/><br>
+            <input name="hint3" type="text" value="" placeholder="Hint"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="message">Level Image</label>
+        {{>queueControl}}
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+        </div>
+    </div>
+  </form>
+</template>
+
+
+<template name="queueControl">
+    <input name="file" type="file" class="fileUploader">
+</template>

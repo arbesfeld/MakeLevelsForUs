@@ -1,0 +1,18 @@
+<template name="postsList">
+  {{breakTimeReset}}
+  {{#each breakPosts}}
+    {{> postsRow }}
+  {{/each}}
+
+  {{#if hasMorePosts}}
+    <a class="load-more" href="{{nextPath}}">Load more</a>
+  {{/if}}
+</template>
+
+<template name='postsRow'>
+  <div class='row span12' style="margin:0">
+    {{#each row }}
+      {{> postItem}}
+    {{/each}}
+  </div>
+</template>

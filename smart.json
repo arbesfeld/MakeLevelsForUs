@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "collectionFS": {},
+    "iron-router": {},
+    "spin": {},
+    "accounts-ui-bootstrap-dropdown": {},
+    "iron-router-progress": {},
+    "GAnalytics": {}
+  }
+}
